@@ -17,7 +17,7 @@ public class HostServiceImpl implements HostService {
     @Override
     public HostInfo add(String hostName) {
         HostInfo hostInfo = aliveCheckManager.createHostInfo(hostName);
-        aliveCheckManager.hostInfoStore().add(hostInfo);
+        aliveCheckManager.hostInfoTestStore().add(hostInfo);
         return hostInfo;
     }
 
